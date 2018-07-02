@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/ec-201804a
+    username: postgres
+    password: postgres
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  jmx:
+    default-domain: ec-201804b #複数のアプリを１つのサーバ上で動かす際に必要な設定
+server:  
+  servlet:
+    context-path: /ec-201804a
